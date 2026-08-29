@@ -86,3 +86,16 @@ h1 {
     cursor: default;
     opacity: 0.5;
 }
+
+.intro,
+.article-link {
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 8px;
+}
+
+.article-link {
+    margin-bottom: 24px;
+}
