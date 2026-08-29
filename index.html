@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>組み込みCミニ演習室</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>組み込みCミニ演習室</h1>
+
+        <section class="quiz-card">
+            <div id="question-number"></div>
+
+            <h2 id="question"></h2>
+
+            <pre id="code-block" class="code-block"></pre>
+
+            <div id="choices" class="choices"></div>
+
+            <div id="result" class="result"></div>
+
+            <div id="explanation" class="explanation"></div>
+
+            <div id="score" class="score"></div>
+
+            <button id="next-button" class="next-button" disabled>
+                次の問題
+            </button>
+        </section>
+    </main>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
