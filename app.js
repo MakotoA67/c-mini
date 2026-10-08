@@ -58,12 +58,18 @@ function checkAnswer(selectedIndex) {
 
     if (selectedIndex === q.answer) {
         resultArea.textContent = "正解！";
+	explanationArea.textContent = q.explanation;
         correctCount++;
     } else {
         resultArea.textContent = "不正解";
-    }
 
-    explanationArea.textContent = q.explanation;
+	if (q.feedback && q.feedback[selectedIndex]) {
+		explanationArea.textContent = q.feedback[selectedIndex] + "\n\n" + q.explanation;
+
+	} else {
+		explanationArea.textContent = q.explanation;
+	}
+    }
 
     updateScore();
 

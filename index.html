@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>組み込みCミニ演習室</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>組み込みCミニ演習室</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <main class="container">
-        <h1>組み込みCミニ演習室</h1>
+<main class="container">
 
-	<p class="intro">
-	    Zenn「組み込みC講座」の内容を確認するためのミニ演習です。
-	</p>
+<h1>組み込みCミニ演習室</h1>
 
-	<p class="article-link">
-	    <a href="https://zenn.dev/makoto_a67/articles/2928e9cf77df9f" target="_blank" rel="noopener">
-	        関連記事：組み込みC講座 第19講「C言語の整数型を整理する」
-	    </a>
-	</p>
+<p class="intro">
+Zenn「組み込みC講座」と連動したミニ演習です。<br>
+気になるテーマを選んで、復習してみてください。
+</p>
 
-        <section class="quiz-card">
-            <div id="question-number"></div>
+<section class="quiz-card">
 
-            <h2 id="question"></h2>
+<h2>C言語の整数型</h2>
 
-            <pre id="code-block" class="code-block"></pre>
+<p>
+`char`、`unsigned`、`sizeof`、`uint32_t` など、
+C言語の整数型を復習します。
+</p>
 
-            <div id="choices" class="choices"></div>
+<p>
+<a href="integer.html">演習をはじめる</a>
+</p>
 
-            <div id="result" class="result"></div>
+</section>
 
-            <div id="explanation" class="explanation"></div>
+<section class="quiz-card">
 
-            <div id="score" class="score"></div>
+<h2>ポインタ復習編</h2>
 
-            <button id="next-button" class="next-button" disabled>
-                次の問題
-            </button>
-        </section>
-    </main>
+<p>
+ポインタ演算、配列、ポインタのキャスト、
+エンディアン、アラインメント、`void *` などを復習します。
+</p>
 
-    <script src="questions.js"></script>
-    <script src="app.js"></script>
+<p>
+<a href="pointer.html">演習をはじめる</a>
+</p>
+
+</section>
+
+</main>
 
 </body>
 </html>
